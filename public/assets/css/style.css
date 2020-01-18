@@ -141,6 +141,7 @@ header button {
 	float: left;
 	width: 80%;
 	padding: 0px 20px;
+	font-family: 'Special Elite', cursive;
 }
 
 .story-body img {
@@ -157,6 +158,7 @@ header button {
 	padding: 40px 90px;
 	color: #aaa;
 	background-color: #fff;
+	font-family: 'Special Elite', cursive;
 }
 
 #addnote {
@@ -169,17 +171,20 @@ header button {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.9);
-    z-index: 4;
+	z-index: 4;
+	font-family: 'Special Elite', cursive;
 }
 
 #note {
 	padding: 0 20px 20px 20px;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-displayer {
 	width: 700px;
 	background-color: #fff;
 	z-index: 5;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-displayer h2 {
@@ -187,6 +192,7 @@ header button {
 	color: #fff;
 	padding: 0 20px;
 	margin: 0;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-displayer h3 {
@@ -194,12 +200,14 @@ header button {
 	margin: 0;
 	background-color: #93d2f7;
 	color: #3181d3;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-displayer label {
 	color: #aaa;
 	font-size: 20px;
 	font-weight: bold;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-displayer button {
@@ -209,12 +217,14 @@ header button {
 	font-weight: bold;
 	font-size: 20px;
 	margin: 0 10px;
-	border-radius: 5px
+	border-radius: 5px;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-displayer button:hover {
 	background-color: #aed4fb;
 	box-shadow: 0 0 10px #fff;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-title {
@@ -222,12 +232,14 @@ header button {
 	margin: 0 0 10px 0;
 	padding: 5px;
 	font-size: 15px;
+	font-family: 'Special Elite', cursive;
 }
 
 #note-body {
 	width: 100%;
 	padding: 5px;
 	font-size: 15px;
+	font-family: 'Special Elite', cursive;
 }
 
 #container {
