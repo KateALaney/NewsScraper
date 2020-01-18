@@ -55,7 +55,7 @@ app.listen(port, function() {
 app.get("/", function(req, res) {
 	Article.find({}, null, {sort: {created: -1}}, function(err, data) {
 		if(data.length === 0) {
-			res.render("placeholder", {message: "There's nothing scraped yet. Please click \"Scrape For Newest Articles\" for fresh and delicious news."});
+			res.render("placeholder", {message: "Scrape away!"});
 		}
 		else{
 			res.render("index", {articles: data});
@@ -100,7 +100,7 @@ app.get("/scrape", function(req, res) {
 app.get("/saved", function(req, res) {
 	Article.find({issaved: true}, null, {sort: {created: -1}}, function(err, data) {
 		if(data.length === 0) {
-			res.render("placeholder", {message: "You have not saved any articles yet. Try to save some delicious news by simply clicking \"Save Article\"!"});
+			res.render("placeholder", {message: "No articles saved!"});
 		}
 		else {
 			res.render("saved", {saved: data});
@@ -119,7 +119,7 @@ app.post("/search", function(req, res) {
 	Article.find({$text: {$search: req.body.search, $caseSensitive: false}}, null, {sort: {created: -1}}, function(err, data) {
 		console.log(data);
 		if (data.length === 0) {
-			res.render("placeholder", {message: "Nothing has been found. Please try other keywords."});
+			res.render("placeholder", {message: "Try again!"});
 		}
 		else {
 			res.render("search", {search: data})
